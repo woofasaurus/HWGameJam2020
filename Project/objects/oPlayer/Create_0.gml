@@ -39,8 +39,8 @@ currentanimation = 0 + state*10
 
 animarray[0] = sIdle_Axe
 animarray[1] = sWalking_Axe
-animarray[2] = sJump
-animarray[3] = sFall
+animarray[2] = sJump_Axe
+animarray[3] = sFall_Axe
 animarray[4] = sAttack_Axe
 animarray[10] = sIdleArmLost
 animarray[11] = sWalkingArmLost

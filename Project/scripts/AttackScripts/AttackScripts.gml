@@ -33,8 +33,28 @@ function hitDetect(player)	//
 	
 function playerStop(player)
 {
-	player.hsp = 0
+	//player.hsp = 0
+	//vsp += grv
+	#region movement
+	hsp = player.move * walksp
+	#region facing
+	if sign(hsp) < 0
+	{
+		image_xscale = -1
+	}
+	else if sign(hsp) > 0
+	{
+		image_xscale = 1
+	}
+	#endregion
+
 	vsp += grv
+
+	if (place_meeting(x, y+1, oGround) && kJump)
+	{
+		vsp = jumpsp
+	}
+	#endregion
 }
 	
 function axe(state, player)

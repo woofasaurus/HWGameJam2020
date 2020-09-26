@@ -3,7 +3,7 @@ kRight = keyboard_check(rightInput)
 kJump = keyboard_check(jumpInput)
 kAttack = keyboard_check_pressed(attackInput)
 
-var move = kRight - kLeft
+move = kRight - kLeft
 function movement(move) {
 	#region movement
 	hsp = move * walksp

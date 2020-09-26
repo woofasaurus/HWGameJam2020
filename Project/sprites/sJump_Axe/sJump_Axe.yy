@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 24,
-  "bbox_right": 41,
-  "bbox_top": 5,
-  "bbox_bottom": 59,
+  "bbox_left": 32,
+  "bbox_right": 48,
+  "bbox_top": 24,
+  "bbox_bottom": 69,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 80,
+  "height": 80,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,11 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ad4d2eaa-d7d8-46c0-9a91-90a88b9d3d0f","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad4d2eaa-d7d8-46c0-9a91-90a88b9d3d0f","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":{"name":"a9a445f5-8d88-40c4-aa6d-a8dfa5563e54","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sJump_Axe","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"ad4d2eaa-d7d8-46c0-9a91-90a88b9d3d0f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":{"name":"52497ad2-6253-4652-9655-9ec41ad1c9bc","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":{"name":"3c2c2dca-b823-4bd3-80b8-650054ff69e4","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","path":"sprites/sJump_Axe/sJump_Axe.yy",},"LayerId":{"name":"15d26688-bb95-4943-a9fc-159e2406cb11","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sJump_Axe","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sJump_Axe","path":"sprites/sJump_Axe/sJump_Axe.yy",},
@@ -41,7 +43,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e01845aa-e549-4547-92f2-e15369bec33b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad4d2eaa-d7d8-46c0-9a91-90a88b9d3d0f","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6f5001c9-1986-434a-bed4-c961db5bfd7a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3eaf3b5d-4893-440b-ba50-c6f6ec239430","path":"sprites/sJump_Axe/sJump_Axe.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +56,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 33,
-    "yorigin": 33,
+    "xorigin": 41,
+    "yorigin": 41,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sJump_Axe","path":"sprites/sJump_Axe/sJump_Axe.yy",},
@@ -65,7 +67,9 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a9a445f5-8d88-40c4-aa6d-a8dfa5563e54","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 3","resourceVersion":"1.0","name":"52497ad2-6253-4652-9655-9ec41ad1c9bc","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"3c2c2dca-b823-4bd3-80b8-650054ff69e4","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":false,"isLocked":true,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"15d26688-bb95-4943-a9fc-159e2406cb11","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "sAxeFull",
