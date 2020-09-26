@@ -1,12 +1,16 @@
 hsp = 0
 vsp = 0
-grv = 1
-jumpsp = -10
+grv = 0.5
+jumpsp = -5
 walksp = 2
 hitImm = false
 attacking = false
 targets = ds_list_create()
 weapon = 0;
+
+var scale = 1
+image_xscale = scale
+image_yscale = scale
 
 leftInput = ord("A")
 rightInput = ord("D")
