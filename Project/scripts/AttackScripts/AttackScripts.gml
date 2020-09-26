@@ -33,28 +33,8 @@ function hitDetect(player)	//
 	
 function playerStop(player)
 {
-	//player.hsp = 0
-	//vsp += grv
-	#region movement
-	hsp = player.move * walksp
-	#region facing
-	if sign(hsp) < 0
-	{
-		image_xscale = -1
-	}
-	else if sign(hsp) > 0
-	{
-		image_xscale = 1
-	}
-	#endregion
-
+	player.hsp = 0
 	vsp += grv
-
-	if (place_meeting(x, y+1, oGround) && kJump)
-	{
-		vsp = jumpsp
-	}
-	#endregion
 }
 	
 function axe(state, player)
@@ -72,13 +52,25 @@ function axe(state, player)
 				player.image_index = 0
 				ds_list_clear(player.targets)
 			}
-			player.mask_index = sAttackHB
+			player.mask_index = sAttackHB_Axe
 			hitDetect(player)
 			player.mask_index = sprite_index
 			break;
 	 
 		case states.armLost:	
-
+			playerStop(player)
+			function effect(subject){ //declare what happens to hit targets
+				subject.state++
+			}
+			if (player.sprite_index != sAttackArmLost)
+			{
+				player.sprite_index = sAttackArmLost
+				player.image_index = 0
+				ds_list_clear(player.targets)
+			}
+			player.mask_index = sAttackHBArmLost
+			hitDetect(player)
+			player.mask_index = sprite_index
 			break;
 	
 		case states.legLost: 

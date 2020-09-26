@@ -18,6 +18,7 @@
     {"id":{"name":"sWalking","path":"sprites/sWalking/sWalking.yy",},"order":4,},
     {"id":{"name":"sAttack_Axe","path":"sprites/sAttack_Axe/sAttack_Axe.yy",},"order":7,},
     {"id":{"name":"AttackScripts","path":"scripts/AttackScripts/AttackScripts.yy",},"order":0,},
+    {"id":{"name":"sAttackHBArmLost","path":"sprites/sAttackHBArmLost/sAttackHBArmLost.yy",},"order":5,},
     {"id":{"name":"animationEnd","path":"scripts/animationEnd/animationEnd.yy",},"order":1,},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},"order":1,},
     {"id":{"name":"sFallArmLost","path":"sprites/sFallArmLost/sFallArmLost.yy",},"order":1,},
