@@ -7,6 +7,7 @@ hitImm = false
 attacking = false
 targets = ds_list_create()
 weapon = 0;
+clanging = false;
 
 var scale = 1
 image_xscale = scale
@@ -22,7 +23,8 @@ enum states {
 	armLost = 1,
 	legLost = 2,
 	bothLegsLost = 3,
-	torso = 4	
+	torso = 4,
+	dead = 5
 }
 
 state = 0
@@ -61,21 +63,25 @@ animarray[1] = sWalking_Axe
 animarray[2] = sJump_Axe
 animarray[3] = sFall_Axe
 animarray[4] = sAttack_Axe
+
 animarray[10] = sIdleArmLost
 animarray[11] = sWalkingArmLost
 animarray[12] = sJumpArmLost
 animarray[13] = sFallArmLost
 animarray[14] = sAttackArmLost
+
 animarray[20] = sIdleLegLost
 animarray[21] = sWalkingLegLost
 animarray[22] = sJumpLegLost
 animarray[23] = sFallLegLost
 animarray[24] = sAttackLegLost
+
 animarray[30] = sIdleBothLegsLost
 animarray[31] = sWalkingBothLegsLost
 animarray[32] = sJumpBothLegsLost
 animarray[33] = sFallBothLegsLost
 animarray[34] = sAttackBothLegsLost
+
 animarray[40] = sIdleTorso
 animarray[41] = sWalkingTorso
 animarray[42] = sJumpTorso

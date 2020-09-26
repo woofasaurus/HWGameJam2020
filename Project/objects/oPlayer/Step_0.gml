@@ -4,6 +4,7 @@ kJump = keyboard_check(jumpInput)
 kAttack = keyboard_check_pressed(attackInput)
 
 move = kRight - kLeft
+clanging = false
 function movement(move) {
 	#region movement
 	hsp = move * walksp
@@ -55,6 +56,11 @@ function movement(move) {
 
 if (kAttack || attacking)			//if attacking do the attack method with proper state input
 {
+	if (kAttack)
+	{
+		show_debug_message(string(id) +  " cleared")
+		ds_list_clear(targets)
+	}
 	attacking = true
 	attack(state, weapon, self)
 }
@@ -111,6 +117,10 @@ else {					//otherwise move based on imput
 
 		case states.torso:
 			movement(move)
+			break;
+			
+		case states.dead:
+			instance_destroy()
 			break;
 	}
 }

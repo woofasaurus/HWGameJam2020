@@ -13,18 +13,24 @@ function hitDetect(player)	//
 {
 	var targetsNow = ds_list_create() //players hit by the attack in this frame
 	var hits = instance_place_list(player.x,player.y,oPlayer,targetsNow,false)
-	var pPos = ds_list_find_index(hits, player.id)
+	var pPos = ds_list_find_index(hits, player)
 	if (pPos != -1)									//removes the acting player from the list of hits
 		ds_list_delete(hits, pPos)
 	if (hits > 0)
 	{
+		player.clanging = true
 		for (var i = 0; i < hits; i++) // if this instance has not yet been hit by the attack perform hit effect
 		{
 			var hitID = targetsNow[| i]
 			if (ds_list_find_index(player.targets, hitID) == -1)
 			{
 				ds_list_add(player.targets, hitID)
-				effect(hitID)
+				if (!hitID.clanging)
+					effect(hitID)
+				else
+					clang(player, hitID)
+				
+				show_debug_message(string(id) + " state: " +  string(player.state))
 			}
 		}
 	}
@@ -35,6 +41,12 @@ function playerStop(player)
 {
 	player.hsp = 0
 	vsp += grv
+}
+
+function clang(player, subject)
+{
+	player.vsp -= 10
+	subject.vsp -= 10
 }
 	
 function axe(state, player)
@@ -50,7 +62,7 @@ function axe(state, player)
 			{
 				player.sprite_index = sAttack_Axe
 				player.image_index = 0
-				ds_list_clear(player.targets)
+				//ds_list_clear(player.targets)
 			}
 			player.mask_index = sAttackHB_Axe
 			hitDetect(player)
@@ -66,7 +78,7 @@ function axe(state, player)
 			{
 				player.sprite_index = sAttackArmLost
 				player.image_index = 0
-				ds_list_clear(player.targets)
+				//ds_list_clear(player.targets)
 			}
 			player.mask_index = sAttackHBArmLost
 			hitDetect(player)
@@ -87,7 +99,7 @@ function axe(state, player)
 			{
 				player.sprite_index = sAttackLegLost
 				player.image_index = 0
-				ds_list_clear(player.targets)
+				//ds_list_clear(player.targets)
 			}
 			player.mask_index = sAttackHBLegLost
 			hitDetect(player)
@@ -102,7 +114,7 @@ function axe(state, player)
 			{
 				player.sprite_index = sAttackBothLegsLost
 				player.image_index = 0
-				ds_list_clear(player.targets)
+				//ds_list_clear(player.targets)
 			}
 			player.mask_index = sAttackHBBothLegsLost
 			hitDetect(player)
@@ -117,7 +129,7 @@ function axe(state, player)
 	
 	if (animationEnd())
 	{
-		player.sprite_index = 0 + state*10
+		//player.sprite_index = 0 + state*10  // causes end of attack animation -> fall bug
 		player.attacking = false
 	}
 }

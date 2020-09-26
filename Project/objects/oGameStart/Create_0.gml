@@ -1,4 +1,4 @@
-var pla = instance_create_depth(x,y,depth-1,oPlayer)
+var pla = instance_create_depth(x+300,y,depth-1,oPlayer)
 pla.attackInput = ord("M")
 pla.leftInput = vk_left
 pla.rightInput = vk_right
