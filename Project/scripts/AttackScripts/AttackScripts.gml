@@ -74,11 +74,39 @@ function axe(state, player)
 			break;
 	
 		case states.legLost: 
-
+			if (player.sprite_index != sAttackLegLost && place_meeting(player.x, player.y+1, oGround))
+			{
+				player.hsp = player.image_xscale * walksp * 4
+				player.vsp += player.jumpsp
+			}
+			player.vsp += player.grv
+			function effect(subject){ //declare what happens to hit targets
+				subject.state++
+			}
+			if (player.sprite_index != sAttackLegLost)
+			{
+				player.sprite_index = sAttackLegLost
+				player.image_index = 0
+				ds_list_clear(player.targets)
+			}
+			player.mask_index = sAttackHBLegLost
+			hitDetect(player)
+			player.mask_index = sprite_index
 			break;	
 
 		case states.bothLegsLost:
-
+			function effect(subject){ //declare what happens to hit targets
+				subject.state++
+			}
+			if (player.sprite_index != sAttackBothLegsLost)
+			{
+				player.sprite_index = sAttackBothLegsLost
+				player.image_index = 0
+				ds_list_clear(player.targets)
+			}
+			player.mask_index = sAttackHBBothLegsLost
+			hitDetect(player)
+			player.mask_index = sprite_index
 			break;
 
 		case states.torso:

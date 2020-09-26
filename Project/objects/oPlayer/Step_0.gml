@@ -70,23 +70,43 @@ else {					//otherwise move based on imput
 
 		case states.legLost:
 			#region movement
-			hsp = 0
+			#region facing
+			if sign(move) < 0
+			{
+				image_xscale = -abs(image_xscale)
+			}
+			else if sign(move) > 0
+			{
+				image_xscale = abs(image_xscale)
+			}
+			#endregion
+			if (place_meeting(x, y+1, oGround))
+			{
+				hsp = 0
+			}
 			vsp += grv
 			#endregion
 			break;
 
 		case states.bothLegsLost:
 			#region movement
+			#region facing
+			if sign(move) < 0
+			{
+				image_xscale = -abs(image_xscale)
+			}
+			else if sign(move) > 0
+			{
+				image_xscale = abs(image_xscale)
+			}
+			#endregion
 			hsp = 0
 			vsp += grv
 			#endregion
 			break;
 
 		case states.torso:
-			#region movement
-			hsp = 0
-			vsp += grv
-			#endregion
+			movement(move)
 			break;
 	}
 }
