@@ -86,6 +86,8 @@ else {					//otherwise move based on imput
 			}
 			vsp += grv
 			#endregion
+			currentanimation = animation.fullIdle + state*10
+			sprite_index = animarray[currentanimation]
 			break;
 
 		case states.bothLegsLost:
@@ -103,6 +105,8 @@ else {					//otherwise move based on imput
 			hsp = 0
 			vsp += grv
 			#endregion
+			currentanimation = animation.fullIdle + state*10
+			sprite_index = animarray[currentanimation]
 			break;
 
 		case states.torso:

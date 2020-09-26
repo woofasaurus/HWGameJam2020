@@ -38,6 +38,21 @@ enum animation { //state*10 + individual
 	armLostJumping = 12,
 	armLostFalling = 13,
 	armLostAttacking = 14,
+	legLostIdle = 20,
+	legLostWalking = 21,
+	legLostJumping = 22,
+	legLostFalling = 23,
+	legLostAttacking = 24,
+	bothLegsLostIdle = 30,
+	bothLegsLostWalking = 31,
+	bothLegsLostJumping = 32,
+	bothLegsLostFalling = 33,
+	bothLegsLostAttacking = 34,
+	torsoIdle = 40,
+	torsoWalking = 41,
+	torsoJumping = 42,
+	torsoFalling = 43,
+	torsoAttacking = 44,
 }
 currentanimation = 0 + state*10
 
@@ -51,4 +66,19 @@ animarray[11] = sWalkingArmLost
 animarray[12] = sJumpArmLost
 animarray[13] = sFallArmLost
 animarray[14] = sAttackArmLost
+animarray[20] = sIdleLegLost
+animarray[21] = sWalkingLegLost
+animarray[22] = sJumpLegLost
+animarray[23] = sFallLegLost
+animarray[24] = sAttackLegLost
+animarray[30] = sIdleBothLegsLost
+animarray[31] = sWalkingBothLegsLost
+animarray[32] = sJumpBothLegsLost
+animarray[33] = sFallBothLegsLost
+animarray[34] = sAttackBothLegsLost
+animarray[40] = sIdleTorso
+animarray[41] = sWalkingTorso
+animarray[42] = sJumpTorso
+animarray[43] = sFallTorso
+animarray[44] = sAttackTorso
 

@@ -110,7 +110,7 @@ function axe(state, player)
 			break;
 
 		case states.torso:
-
+			playerStop(player)
 			break;
 			
 	}
