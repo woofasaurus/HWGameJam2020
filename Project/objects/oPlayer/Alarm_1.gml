@@ -1,1 +1,0 @@
-attacking = false

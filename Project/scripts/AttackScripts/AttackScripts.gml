@@ -26,9 +26,14 @@ function hitDetect(player)	//
 			{
 				ds_list_add(player.targets, hitID)
 				if (!hitID.clanging)
+				{
 					effect(hitID)
+					spawnBlood(100)
+				}
 				else
+				{
 					clang(player, hitID)
+				}
 				
 				show_debug_message(string(id) + " state: " +  string(player.state))
 			}
@@ -45,8 +50,8 @@ function playerStop(player)
 
 function clang(player, subject)
 {
-	player.vsp -= 10
-	subject.vsp -= 10
+	player.vsp -= 5
+	subject.vsp -= 5
 }
 	
 function axe(state, player)
