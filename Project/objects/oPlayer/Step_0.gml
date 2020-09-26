@@ -1,7 +1,7 @@
-kLeft = keyboard_check(ord("A"))
-kRight = keyboard_check(ord("D"))
-kJump = keyboard_check(ord("W"))
-kAttack = keyboard_check_pressed(vk_space)
+kLeft = keyboard_check(leftInput)
+kRight = keyboard_check(rightInput)
+kJump = keyboard_check(jumpInput)
+kAttack = keyboard_check_pressed(attackInput)
 
 var move = kRight - kLeft
 function movement(move) {
@@ -25,31 +25,31 @@ function movement(move) {
 		vsp = jumpsp
 	}
 	#endregion
-
+	
 	#region animation
 			if (vsp < 0)
 			{
 				currentanimation = animation.fullJumping + state*10
 				image_index = 0
 				sprite_index = animarray[currentanimation]
-			}
+			} 
 			else if (vsp > 0 && !place_meeting(x, y+vsp, oGround))
 			{
 				currentanimation = animation.fullFalling + state*10
 				image_index = 0
 				sprite_index = animarray[currentanimation]
-			}
+			} 
 			else if (hsp != 0)
 			{
 				currentanimation = animation.fullWalking + state*10
 				sprite_index = animarray[currentanimation]
-			}
+			} 
 			else
 			{
 				currentanimation = animation.fullIdle + state*10
 				sprite_index = animarray[currentanimation]
 			}
-
+	
 			#endregion
 }
 
@@ -57,23 +57,23 @@ if (kAttack || attacking)			//if attacking do the attack method with proper stat
 {
 	attacking = true
 	attack(state, weapon, self)
-}
-else {					//otherwise move based on imput
+} 
+else {					//otherwise move based on imput		
 	switch(state) {
 		case states.full:
 			movement(move)
 			break;
-
-		case states.armLost:
+	 
+		case states.armLost:	
 			movement(move)
 			break;
-
-		case states.legLost:
+	
+		case states.legLost: 
 			#region movement
 			hsp = 0
 			vsp += grv
 			#endregion
-			break;
+			break;	
 
 		case states.bothLegsLost:
 			#region movement

@@ -8,6 +8,11 @@ attacking = false
 targets = ds_list_create()
 weapon = 0;
 
+leftInput = ord("A")
+rightInput = ord("D")
+jumpInput = ord("W")
+attackInput = vk_space
+
 enum states {
 	full = 0,
 	armLost = 1,
