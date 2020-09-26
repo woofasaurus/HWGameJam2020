@@ -110,6 +110,7 @@ function axe(state, player)
 			hitDetect(player)
 			break;	
 
+
 		case states.bothLegsLost:
 
 			break;

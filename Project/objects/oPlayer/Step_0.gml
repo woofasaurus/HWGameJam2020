@@ -10,11 +10,11 @@ function movement(move) {
 	#region facing
 	if sign(hsp) < 0
 	{
-		image_xscale = -1
+		image_xscale = -abs(image_xscale)
 	}
 	else if sign(hsp) > 0
 	{
-		image_xscale = 1
+		image_xscale = abs(image_xscale)
 	}
 	#endregion
 
