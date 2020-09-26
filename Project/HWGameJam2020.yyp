@@ -3,6 +3,7 @@
     {"id":{"name":"sJump_Axe","path":"sprites/sJump_Axe/sJump_Axe.yy",},"order":9,},
     {"id":{"name":"sAttackHB","path":"sprites/sAttackHB/sAttackHB.yy",},"order":5,},
     {"id":{"name":"sIdle","path":"sprites/sIdle/sIdle.yy",},"order":2,},
+    {"id":{"name":"sWalkingArmLost1","path":"sprites/sWalkingArmLost1/sWalkingArmLost1.yy",},"order":5,},
     {"id":{"name":"sIdle_Axe","path":"sprites/sIdle_Axe/sIdle_Axe.yy",},"order":3,},
     {"id":{"name":"sIdleArmLost","path":"sprites/sIdleArmLost/sIdleArmLost.yy",},"order":2,},
     {"id":{"name":"oGameStart","path":"objects/oGameStart/oGameStart.yy",},"order":2,},
