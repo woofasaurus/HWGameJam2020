@@ -24,7 +24,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c762fb9a-76ca-48df-b0c7-f23b0d067554","path":"sprites/sFallLegLost/sFallLegLost.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"","path":"",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"","path":"",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"c762fb9a-76ca-48df-b0c7-f23b0d067554","path":"sprites/sFallLegLost/sFallLegLost.yy",},"LayerId":{"name":"a9a445f5-8d88-40c4-aa6d-a8dfa5563e54","path":"sprites/sFallLegLost/sFallLegLost.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFallLegLost","path":"sprites/sFallLegLost/sFallLegLost.yy",},"resourceVersion":"1.0","name":"c762fb9a-76ca-48df-b0c7-f23b0d067554","tags":[],"resourceType":"GMSpriteFrame",},
   ],
