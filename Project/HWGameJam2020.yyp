@@ -33,6 +33,7 @@
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":0,},
     {"id":{"name":"sJumpArmLost1","path":"sprites/sJumpArmLost1/sJumpArmLost1.yy",},"order":7,},
     {"id":{"name":"spawnBlood","path":"scripts/spawnBlood/spawnBlood.yy",},"order":2,},
+    {"id":{"name":"sVictory","path":"sprites/sVictory/sVictory.yy",},"order":8,},
     {"id":{"name":"sWalking","path":"sprites/sWalking/sWalking.yy",},"order":4,},
     {"id":{"name":"sJumpLegLost","path":"sprites/sJumpLegLost/sJumpLegLost.yy",},"order":4,},
     {"id":{"name":"sFallTorso","path":"sprites/sFallTorso/sFallTorso.yy",},"order":2,},
