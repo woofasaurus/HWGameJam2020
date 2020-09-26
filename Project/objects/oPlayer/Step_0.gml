@@ -4,5 +4,9 @@ if (keyboard_check(vk_right))
 }
 if (keyboard_check(vk_left))
 {
-	x-= movespeed; a
+	x-= movespeed;
+}
+if (keyboard_check(vk_up))
+{
+	y-= movespeed;
 }
