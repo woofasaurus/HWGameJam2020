@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a9a445f5-8d88-40c4-aa6d-a8dfa5563e54","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "sDefaultFull",
+    "path": "folders/Sprites/sDefaultFull.yy",
   },
   "resourceVersion": "1.0",
   "name": "sIdle",
