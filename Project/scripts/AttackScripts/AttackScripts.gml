@@ -108,16 +108,45 @@ function axe(state, player)
 			}
 			player.mask_index = sAttackHB
 			hitDetect(player)
+			player.mask_index = sprite_index
 			break;	
 
 
 		case states.bothLegsLost:
 
-			break;
+			playerStop(player)
+			function effect(subject){
+				subject.state++
+			}
+			if (player.sprite_index != sAttack_Axe)
+			{
+				player.sprite_index = sAttackArmLost //placeholder change to both leg lost
+				player.image_index = 0
+				ds_list_clear(player.targets)
+			}
+			player.mask_index = sAttackHB
+			hitDetect(player)
+			player.mask_index = sprite_index
+			break;	
+
 
 		case states.torso:
 
-			break;
+			playerStop(player)
+			function effect(subject){
+				subject.state++
+			}
+			if (player.sprite_index != sAttack_Axe)
+			{
+				player.sprite_index = sAttackArmLost //placeholder change to dead
+				player.image_index = 0
+				ds_list_clear(player.targets)
+			}
+			player.mask_index = sAttackHB
+			hitDetect(player)
+			player.mask_index = sprite_index
+			break;	
+
 			
 	}
 	

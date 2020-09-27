@@ -15,6 +15,7 @@ image_yscale = scale
 leftInput = ord("A")
 rightInput = ord("D")
 jumpInput = ord("W")
+downInput = ord("S")
 attackInput = vk_space
 
 enum states {
