@@ -14,6 +14,7 @@
     {"id":{"name":"sIdleArmLost","path":"sprites/sIdleArmLost/sIdleArmLost.yy",},"order":2,},
     {"id":{"name":"oGameStart","path":"objects/oGameStart/oGameStart.yy",},"order":2,},
     {"id":{"name":"sAttackArmLost","path":"sprites/sAttackArmLost/sAttackArmLost.yy",},"order":0,},
+    {"id":{"name":"Clapping","path":"sounds/Clapping/Clapping.yy",},"order":0,},
     {"id":{"name":"sAttackHBTorso","path":"sprites/sAttackHBTorso/sAttackHBTorso.yy",},"order":1,},
     {"id":{"name":"sAttackLegLost","path":"sprites/sAttackLegLost/sAttackLegLost.yy",},"order":0,},
     {"id":{"name":"sFallBothLegsLost","path":"sprites/sFallBothLegsLost/sFallBothLegsLost.yy",},"order":2,},
@@ -99,6 +100,7 @@
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":461609314234257646,"resourceVersion":"1.0","name":"Ambience","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
