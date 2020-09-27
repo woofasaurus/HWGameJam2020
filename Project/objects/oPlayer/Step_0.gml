@@ -5,9 +5,9 @@ kAttack = keyboard_check_pressed(attackInput)
 
 move = kRight - kLeft
 clanging = false
-function movement(move) {
+function movement(move, mspd) {
 	#region movement
-	hsp = move * walksp
+	hsp = move * walksp * mspd
 	#region facing
 	if sign(hsp) < 0
 	{
@@ -67,11 +67,11 @@ if (kAttack || attacking)			//if attacking do the attack method with proper stat
 else {					//otherwise move based on imput
 	switch(state) {
 		case states.full:
-			movement(move)
+			movement(move, 1)
 			break;
 
 		case states.armLost:
-			movement(move)
+			movement(move, 1)
 			break;
 
 		case states.legLost:
@@ -97,26 +97,11 @@ else {					//otherwise move based on imput
 			break;
 
 		case states.bothLegsLost:
-			#region movement
-			#region facing
-			if sign(move) < 0
-			{
-				image_xscale = -abs(image_xscale)
-			}
-			else if sign(move) > 0
-			{
-				image_xscale = abs(image_xscale)
-			}
-			#endregion
-			hsp = 0
-			vsp += grv
-			#endregion
-			currentanimation = animation.fullIdle + state*10
-			sprite_index = animarray[currentanimation]
+			movement(move, 0.2)
 			break;
 
 		case states.torso:
-			movement(move)
+			movement(move, 2)
 			break;
 			
 		case states.dead:
