@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sKeyPlaceholder",
-    "path": "sprites/sKeyPlaceholder/sKeyPlaceholder.yy",
+    "name": "key1",
+    "path": "sprites/key1/key1.yy",
   },
   "solid": false,
   "visible": true,

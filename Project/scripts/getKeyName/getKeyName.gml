@@ -7,9 +7,9 @@ switch(_key)
 	case vk_tab: out = "TAB"; break;
 	case vk_space: out = "SPACE"; break;
 	case vk_up: out = "UP"; break;
-	case vk_down: out = "DOWN"; break;
-	case vk_left: out = "LEFT"; break;
-	case vk_right: out = "RIGHT"; break;
+	case vk_down: out = "DN"; break;
+	case vk_left: out = "LT"; break;
+	case vk_right: out = "RT"; break;
 	case vk_control: out = "CONTROL"; break;
 	default: out = chr(_key); break;
 }

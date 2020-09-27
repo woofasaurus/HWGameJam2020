@@ -12,5 +12,5 @@ global.downInput[0] = ord ("S")
 global.downInput[1] = vk_down
 global.attackInput = [2]
 global.attackInput[0] = ord("C")
-global.attackInput[1] = vk_control
+global.attackInput[1] = ord("M")
 draw_set_font(Font1)

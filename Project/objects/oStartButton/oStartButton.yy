@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "placeholder",
-    "path": "sprites/placeholder/placeholder.yy",
+    "name": "start1",
+    "path": "sprites/start1/start1.yy",
   },
   "solid": false,
   "visible": true,

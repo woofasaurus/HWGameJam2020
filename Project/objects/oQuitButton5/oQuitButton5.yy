@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "placeholder",
-    "path": "sprites/placeholder/placeholder.yy",
+    "name": "quit1",
+    "path": "sprites/quit1/quit1.yy",
   },
   "solid": false,
   "visible": true,
