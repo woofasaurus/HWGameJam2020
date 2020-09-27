@@ -1,0 +1,2 @@
+winner = ""
+cheer(5)
